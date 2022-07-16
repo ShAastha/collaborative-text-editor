@@ -5,9 +5,9 @@ const server = require('http').Server(app);
 const io = require("socket.io")(server);
 const PORT = process.env.PORT || 3001;
 
-app.use(express.static(path.resolve(__dirname + '../web/build')));
+app.use(express.static(path.join(__dirname + '../web/build')));
 app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../web/build', 'index.html'));
+    res.sendFile(path.join(__dirname, '../web/build/index.html'));
 });
 
 io.on("connection", socket => {
