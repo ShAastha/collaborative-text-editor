@@ -37,6 +37,6 @@
       "last 1 safari version"
     ]
   },
-  "homepage": ".",
+  "homepage": "https://real-time-text-editor.herokuapp.com/",
   "proxy": "http://localhost:3001"
 }
