@@ -20,5 +20,5 @@ io.on("connection", socket => {
 });
 
 server.listen(PORT, () => {
-    console.log('Connected to port:', PORT);
+    console.log('Connected to port', PORT);
 })
