@@ -1,5 +1,6 @@
 # Building and running the app
-
+in the root directory run `npm i`  to install dependencies and then  `npm start` to start the server
+cd into `web` directory, run `npm i` and then run `npm start` to serve it locally
 
 ## ARCHITECTURE and SYSTEM DESIGN
 
