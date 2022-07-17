@@ -6,7 +6,10 @@ const server = require('http').Server(app);
 const io = require("socket.io")(server);
 const PORT = process.env.PORT || 3001;
 app.use(cors());
-app.use(express.static(path.join(__dirname + '../web/build')));
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static(path.join(__dirname + '../web/build')));
+}
+
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../web/build/index.html'));
 });
